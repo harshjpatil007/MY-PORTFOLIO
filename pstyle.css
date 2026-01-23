@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #222;
+}
+
+/* NAVBAR */
+header {
+    background: #0f172a;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(135deg, #020617, #0f172a);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero span {
+    color: #38bdf8;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px 22px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn.secondary {
+    background: transparent;
+    color: white;
+    border: 1px solid #38bdf8;
+}
+
+/* SECTIONS */
+.section {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 25px;
+    color: #0f172a;
+}
+
+.bg {
+    background: #f1f5f9;
+}
+
+/* SKILLS */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    padding: 20px;
+    background: white;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+}
+
+/* PROJECTS */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.project-card {
+    width: 280px;
+    padding: 20px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ANIMATIONS */
+.fade-in {
+    animation: fadeIn 1.2s ease;
+}
+
+.slide-up {
+    animation: slideUp 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
